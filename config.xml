@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.nerdyhippie.authtest" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Firebase Auth Test</name>
+    <description>
+        A sample app to figure out how to authenticate using Firebase's Google Login in Cordova
+    </description>
+    <author email="jorvis@nerdyhippie.com" href="http://nerdyhippie.com">
+        Josh Orvis
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <universal-links>
+        <host event="foo" name="ww766.app.goo.gl" scheme="https" />
+        <host event="bar" name="cordova-auth-test.firebaseapp.com" scheme="https" />
+    </universal-links>
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <engine name="android" spec="^7.0.0" />
+    <plugin name="cordova-plugin-browsertab" spec="^0.2.0" />
+    <plugin name="cordova-plugin-buildinfo" spec="^2.0.1" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-universal-links-plugin" spec="^1.2.1" />
+</widget>
